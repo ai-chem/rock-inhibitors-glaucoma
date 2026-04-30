@@ -36,7 +36,7 @@ rock-inhibitors-glaucoma/
 ### 1. Clone and set up
 
 ```bash
-git clone https://github.com/anastasiavepreva/rock-inhibitors-glaucoma.git
+git clone https://anonymous.4open.science/r/rock-inhibitors-glaucoma-367B/
 cd rock-inhibitors-glaucoma
 bash scripts/setup.sh
 ```
