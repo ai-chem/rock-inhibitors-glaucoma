@@ -1,4 +1,4 @@
-# Generative AI for Discovery of ROCK Inhibitors for Treatment of Glaucoma
+# Generative AI under domain-specific constraints for ophthalmic ROCK inhibitor discovery
 
 Code and data accompanying the paper:
 
