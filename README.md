@@ -2,7 +2,7 @@
 
 Code and data accompanying the paper:
 
-> **Generative AI for Discovery of ROCK Inhibitors for Treatment of Glaucoma**
+> **Generative AI under domain-specific constraints for ophthalmic ROCK inhibitor discovery**
 
 ## Repository structure
 
