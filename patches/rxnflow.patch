@@ -117,7 +117,7 @@ index e7c3298..4e43943 100644
 +    model = joblib.load(path)
 +    fps = mols_to_maccs(mols)
 +    mel = model.predict_proba(fps)
-+    mel = mel[:, 1]
++    mel = mel[:, 0]
 +    mel = torch.tensor(mel, dtype=torch.float32)
 +    return mel
 +
@@ -134,6 +134,6 @@ index e7c3298..4e43943 100644
 +    model = joblib.load(path)
 +    fps = np.array([mol_to_descriptor(mol) for mol in mols])
 +    cor = model.predict_proba(fps)
-+    cor = cor[:, 1]
++    cor = cor[:, 0]
 +    cor = torch.tensor(cor, dtype=torch.float32)
 +    return cor
