@@ -92,7 +92,7 @@ index 5447c53..4d69546 100644
 +def Melanin(mol):
 +    model = load("melanin.pkl")
 +    fps = smi_to_maccs([Chem.MolToSmiles(mol)])
-+    mel = model.predict_proba(fps)[0][1]
++    mel = model.predict_proba(fps)[0][0]
 +    return mel
 +
 +
@@ -107,7 +107,7 @@ index 5447c53..4d69546 100644
 +    model = load("corneal.pkl")
 +    desc = smi_to_descriptors([Chem.MolToSmiles(mol)]) 
 +    print("Descriptor array shape:", desc.shape)
-+    cor = model.predict_proba(desc)[0][1]
++    cor = model.predict_proba(desc)[0][0]
 +    return cor
 +
 +
