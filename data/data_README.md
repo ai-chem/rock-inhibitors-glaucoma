@@ -24,7 +24,7 @@ provided, so that the binarisation and balancing steps can be reproduced.
 |---|---|---|---|
 | `corneal_permeability_raw.csv` | 163 | `smiles`, `title`, `log_papp` | Apparent permeability coefficients pooled from five ex vivo rabbit corneal perfusion studies. `title` gives the source study. |
 | `corneal_permeability.csv` | 162 | `smiles`, `Class` | Modelling-ready set: one duplicate structure removed, then binarised at the median of `log_papp`. |
-| `melanin_binding_raw.csv` | 780 | `smiles`, `fraction_unbound` | Fraction unbound in an in vitro melanin binding assay. |
+| `melanin_raw.csv` | 780 | `smiles`, `fraction_unbound` | Fraction unbound in an in vitro melanin binding assay. |
 | `melanin_binding.csv` | 373 | `smiles`, `Class` | Modelling-ready set after downsampling of the majority class. |
 | `irritation.csv` | 5220 | `smiles`, `Class` | Eye irritation labels taken unchanged from a previously published in silico dataset. |
 
