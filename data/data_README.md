@@ -58,9 +58,9 @@ for comparison and benchmarking, not for training.
 
 | File | Rows | Description |
 |---|---|---|
-| `known_rock_inhibitors.csv` | 93 | Known ROCK inhibitors, used for the physicochemical and Rule of Four comparison against generated molecules. |
-| `approved_ophthalmic_drugs.csv` | 8 | Approved ophthalmic drugs, used as the upper reference in the same comparison. |
-| `chembl_rock2_benchmark.csv` | 3031 | Human ROCK2 inhibitors with exact quantitative activity measurements, used to benchmark Boltz-2 against Uni-Dock. Filtered for assay-to-target confidence and measurement validity; structures standardised, duplicate measurements removed, compounds with conflicting activity classifications excluded, and repeated measurements aggregated in logarithmic concentration space. |
+| `known_inhibitors.csv` | 93 | Known ROCK inhibitors, used for the physicochemical and Rule of Four comparison against generated molecules. |
+| `6ed6_approved.csv` | 8 | Approved ophthalmic drugs, used as the upper reference in the same comparison. |
+| `ROCK2_Boltz2_tabular_combined_boltz.csv` | 3031 | Human ROCK2 inhibitors with exact quantitative activity measurements, used to benchmark Boltz-2 against Uni-Dock. Filtered for assay-to-target confidence and measurement validity; structures standardised, duplicate measurements removed, compounds with conflicting activity classifications excluded, and repeated measurements aggregated in logarithmic concentration space. |
 
 ---
 
