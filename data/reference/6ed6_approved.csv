@@ -1,0 +1,9 @@
+Unnamed: 0,Smiles,Mechanism of Action,Action Type,Standard Type,Standard Relation,Standard Value,Standard Units,compound_name
+0,NC[C@@](O)(c1ccc(Cl)cc1)c1ccc(-c2cn[nH]c2)cc1,Rho-associated protein kinase inhibitor,INHIBITOR,Kd,>,30000.0,nM,-
+1,Cc1ccc(C(=O)OCc2ccc([C@@H](CN)C(=O)Nc3ccc4cnccc4c3)cc2)c(C)c1,Rho-associated protein kinase inhibitor,INHIBITOR,Ki,=,1.0,nM,NETARSUDIL
+2,CN(C)C(C(=O)Nc1ccc2c(=O)[nH]ccc2c1)c1ccsc1,Rho-associated protein kinase inhibitor,INHIBITOR,Ki,=,2.0,nM,VEROSUDIL
+3,C[C@H]1CNCCCN1S(=O)(=O)c1cccc2cncc(F)c12,Rho-associated protein kinase inhibitor,INHIBITOR,Ki,=,330.0,nM,RIPASUDIL
+4,C[C@@H](N)c1ccc(C(=O)Nc2ccnc3[nH]ccc23)cc1,Rho-associated protein kinase inhibitor,INHIBITOR,Ki,=,2.4,nM,-
+5,O=c1[nH]ccc2cc(OC3CCNCC3)ccc12,Rho-associated protein kinase inhibitor,INHIBITOR,Ki,=,36.0,nM,-
+6,CC(C)NC(=O)COc1cccc(-c2nc(Nc3ccc4[nH]ncc4c3)c3ccccc3n2)c1,Rho-associated protein kinase inhibitor,INHIBITOR,Ki,=,501.19,nM,BELUMOSUDIL
+7,O=S(=O)(c1cccc2cnccc12)N1CCCNCC1,Rho-associated protein kinase inhibitor,INHIBITOR,Ki,=,7943.28,nM,FASUDIL
