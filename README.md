@@ -1,35 +1,33 @@
 # Generative AI under domain-specific constraints for ophthalmic ROCK inhibitor discovery
 
-Code and data accompanying the paper:
-
-> **Generative AI under domain-specific constraints for ophthalmic ROCK inhibitor discovery**
-
 ## Repository structure
 
-```
 rock-inhibitors-glaucoma/
-├── patches/                        # Minimal diffs to upstream generative model repos
-│   ├── rxnflow.patch
-│   ├── tacogfn.patch
-│   └── freedpp.patch
-├── models/                         # Trained ocular property classifiers (.pkl)
+├── data/
+│   ├── README.md                   # Detailed description of every dataset
+│   ├── ocular/                     # Training data for the three ocular classifiers
+│   ├── receptor/                   # ROCK-2 structure and pocket files (PDB ID: 6ED6)
+│   ├── reference/                  # ChEMBL compound sets for comparison and benchmarking
+│   └── generated/                  # Generated molecules with scores
+├── models/                         # Fitted ocular property classifiers (.pkl)
 │   ├── corneal.pkl
 │   ├── melanin.pkl
 │   └── irritation.pkl
-├── data/
-│   ├── ocular/                     # Training data for ocular property models
-│   ├── receptor/                   # ROCK-2 structure and pocket files (PDB ID: 6ED6)
-│   └── alert_collections.csv
+├── scripts/
+│   ├── classifiers/                # Notebooks that train and evaluate the classifiers
+│   └── setup.sh                    # Clone upstream repos + apply patches
 ├── methods/
 │   ├── evosbdd/                    # Custom EvoSBDD implementation
 │   ├── alidiff_configs/            # AliDiff configs and instructions
 │   ├── targetdiff_configs/         # BADGER TargetDiff configs and instructions
-│   └── decompdiff_configs/         # BADGER DecompDiff configs and instructions
-├── scripts/
-│   ├── setup.sh                    # Clone upstream repos + apply patches
-│   └── run_generation.sh
-
-```
+│   ├── decompdiff_configs/         # BADGER DecompDiff configs and instructions
+│   └── README_DrugFlow.md          # DrugFlow instructions
+├── patches/                        # Minimal diffs to upstream generative model repos
+│   ├── rxnflow.patch
+│   ├── tacogfn.patch
+│   └── freedpp.patch
+├── requirements.txt                # Analysis environment (classifiers, scoring, figures)
+└── LICENSE
 
 ## Quick start
 
