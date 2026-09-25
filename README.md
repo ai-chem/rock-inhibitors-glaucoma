@@ -2,6 +2,8 @@
 
 ## Repository structure
 
+```
+
 rock-inhibitors-glaucoma/
 ├── data/
 │   ├── README.md                   # Detailed description of every dataset
@@ -28,6 +30,8 @@ rock-inhibitors-glaucoma/
 │   └── freedpp.patch
 ├── requirements.txt                # Analysis environment (classifiers, scoring, figures)
 └── LICENSE
+
+```
 
 ## Quick start
 
