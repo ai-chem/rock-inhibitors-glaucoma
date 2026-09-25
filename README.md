@@ -279,3 +279,6 @@ Generated candidates were scored using a multi-fidelity pipeline:
 ## Citation
 
 ## License
+
+Code in this repository is released under the MIT License (see `LICENSE`).
+Datasets in `data/` are released under CC BY 4.0.
