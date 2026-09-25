@@ -35,17 +35,42 @@ rock-inhibitors-glaucoma/
 
 ## Quick start
 
-### 1. Clone and set up
+### Analysis environment
+
+The ocular property classifiers and all downstream scoring and plotting run in
+a single lightweight environment:
 
 ```bash
 git clone https://github.com/ai-chem/rock-inhibitors-glaucoma
 cd rock-inhibitors-glaucoma
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+The pinned versions matter: the classifiers in `models/` are scikit-learn and
+XGBoost pickles, which are not portable across releases. Check that they load:
+
+```python
+import joblib
+for m in ('corneal', 'melanin', 'irritation'):
+    print(m, type(joblib.load(f'models/{m}.pkl')).__name__)
+```
+
+Expected output: `XGBClassifier`, `ExtraTreesClassifier`,
+`GradientBoostingClassifier`.
+
+### Generation environments
+
+The generative methods are **not** covered by `requirements.txt`. Each upstream
+repository has its own, mutually incompatible dependencies, so create a
+separate environment per method following the upstream README.
+
+```bash
 bash scripts/setup.sh
 ```
 
-`setup.sh` will clone each upstream repository at the pinned commit, apply the corresponding patch, and download pretrained checkpoints.
-
-### 2. Install dependencies
+`setup.sh` clones each upstream repository at the pinned commit below, applies
+the corresponding patch, and downloads pretrained checkpoints where available.
 
 Each generative method has its own environment. See the upstream READMEs linked below for installation instructions.
 
